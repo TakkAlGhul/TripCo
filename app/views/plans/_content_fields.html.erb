@@ -1,0 +1,18 @@
+<div class="nested-fields card">
+  <h5 class="left blue-text">Plan Detail</h5>
+  <%= f.label :place, for: "place" %>
+  <%= f.text_field :place_name, placeholder: "ex) museum, restaurant...", id: "place" %>
+  <%= f.label :description, for: "description" %>
+  <%= f.text_field :description, placeholder: "description here", id: "description" %>
+  <%= f.label :price, for: "price" %>
+  <%= f.number_field :price, placeholder: "price", id: "price" %>
+  <%= f.label :time, for: "time" %>
+  <%= f.text_field :time, placeholder: "2h ~ 3h", id: "time" %>
+  <%= f.label :access, for: "access" %>
+  <%= f.text_field :access, placeholder: "access", id: "access" %>
+  <%= f.label :image, for: "image" %>
+  <%= f.file_field :image, id: "image" %>
+  <div class="link">
+    <%= link_to_remove_association("contents remove", f, id: 'remove_content' ) %>
+  </div>
+</div>
