@@ -1,9 +1,9 @@
 <div class="plans">
-  <%= render partial: "layouts/nav" %>
+  <%= render partial: "layouts/g-nav" %>
   <div class="plans-title">
     <h2 class="center">Plans around the world</h2>
   </div>
   <div class="main-contents">
-    <%= render partial: "list" %>
+    <%= render partial: "list", collection: @plans, as: "plan" %>
   </div> 
 </div>

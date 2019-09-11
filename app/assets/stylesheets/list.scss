@@ -1,3 +1,19 @@
 .plans-list {
   margin: 30px 60px;
+
+  .card {
+
+    &-image {
+      width: 150px;
+      height: 100%;
+    }
+    
+    &-title {
+      padding: 0 20px 0;
+    }
+
+    .plan-title {
+      padding: 0 20px 0;
+    }
+  }
 }

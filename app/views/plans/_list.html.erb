@@ -1,19 +1,16 @@
 <div class="plans-list">
-  <div class="row">
-    <div class="col s12 m8">
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="https://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
+  <%= link_to plan_path(plan.id), class:"card horizontal" do %>
+    <div class="card-image">
+      <%= image_tag(plan.contents.first.image.url) %>
+    </div>
+    <div class="card-stacked">
+      <div class="card-title">
+        <h5><%= plan.destination %></h5> 
+      </div> 
+      <div class="plan-title"><p><%= plan.title %></p></div>
+      <div class="card-content">
+        <%= plan.contents.first.description %>
       </div>
-    </div> 
-  </div>      
+    </div>
+  <% end %>      
 </div>
