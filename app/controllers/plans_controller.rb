@@ -10,6 +10,7 @@ class PlansController < ApplicationController
   
   def show
     @plan = Plan.find(params[:id])
+    @contents = @plan.contents.where(plan_id: params[:id])
   end
 
   def new
@@ -24,6 +25,11 @@ class PlansController < ApplicationController
     else
       render :new
     end
+  end
+
+  def search
+    @plan = Plan.find_by(destination: params[:search])
+    @keyword = Plan.search(params[:search]).order('created_at desc')
   end
 
   private

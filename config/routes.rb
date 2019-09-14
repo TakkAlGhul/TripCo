@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :plans do
     collection do
       get 'plans' 
+      get 'search'
     end
     
     resources :contents

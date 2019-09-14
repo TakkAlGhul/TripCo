@@ -1,7 +1,11 @@
 @import "./reset";
 @import 'materialize';
 @import 'font-awesome';
+@import 'global.scss';
 @import 'contents';
 @import 'top';
 @import 'form';
 @import 'create-forms.scss';
+@import 'create-btn';
+@import 'search-result';
+

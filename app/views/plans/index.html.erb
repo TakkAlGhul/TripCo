@@ -3,11 +3,24 @@
   <%= render partial: "layouts/nav" %>
     <h3 class="header-title center white-text">Share your travel ideas.</h3>
     <h3 class="header-title center white-text">Find the best plans for your journey.</h3>
-    <%= render partial: "layouts/search" %>
+    <%= render partial: "layouts/search-box" %>
   </div>
   <div class="mid-wrapper">
-    <%= image_tag('travel_planning.svg') %>
+    <div class="mid-wrapper__content">
+       <%= image_tag('travel_planning.svg', class: 'mid-wrapper__image') %>
+      <div class="mid-wrapper__content--text">
+        Tell us your favorite places and how you traveled.
+      </div>
+    </div>
+   
+    <div class="mid-wrapper__content">
+      <div class="mid-wrapper__content--text">
+      Share your travel ideas with travelers around the world!
+      </div>
+      <%= image_tag('marginalia-location-access.png', class: 'mid-wrapper__image') %>
+    </div>
   </div>
 </div> 
+<%= render partial: 'layouts/create_btn' %>
   
 

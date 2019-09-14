@@ -1,0 +1,27 @@
+.contents {
+  padding: 130px 0;
+
+  &-left {
+    position: fixed;
+    padding: 70px 60px 0;
+
+    &__title {
+      font-size: 37px;
+    }
+
+    &__list {
+      font-size: 24px;
+    }
+
+    &__list:last-child .allow-down{
+      display: none;
+    }
+  }
+  .card {
+    margin: 10px 80px 20px 40px;
+
+    img {
+      height: 370px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<%= render partial: 'layouts/g-nav' %>
+<div class="contents">
+  <div class="contents-left">
+    <div class="contents-left__title center"><%= @plan.title%></div>
+    <br />
+    <% @contents.each_with_index do |content, i| %>
+      <div class="contents-left__list center">
+        <span><%= i +1 %>.</span>
+        <%= content.place_name %>
+        <br />
+        <div class="allow-down">
+          <i class="material-icons">arrow_downward</i>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <%= render partial: 'contents-card', collection: @contents, as: "content" %>
+</div>

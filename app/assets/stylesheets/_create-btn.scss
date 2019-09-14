@@ -1,0 +1,23 @@
+.create-btn {
+  position: fixed;
+  z-index: 10;
+  bottom: 32px;
+  right: 32px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #64b2cd;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+
+  .material-icons {
+    font-size: 48px !important;
+  }
+}
+
+@media screen and (min-width: 993px){
+  .create-btn {
+    display: none;
+  }
+}
