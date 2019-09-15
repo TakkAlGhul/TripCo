@@ -25,24 +25,4 @@
   </div>
 </div> 
 <%= render partial: 'layouts/create_btn' %>
-<ul class="sidenav" id="mobile-demo">
-  <li>
-    <%= link_to new_user_registration_path do%>
-      <i class="material-icons">assignment_ind</i>
-      Sign Up
-    <% end %>
-  </li>
-  <li>
-    <%= link_to new_user_session_path do%>
-      <i class="material-icons">input</i>
-      Log In
-    <% end %>
-  </li>
-    <li>
-    <%= link_to new_user_session_path do%>
-      <i class="material-icons">arrow back</i>
-      Log Out
-    <% end %>
-  </li>
-</ul>
-
+<%= render partial: 'layouts/side-nav' %>

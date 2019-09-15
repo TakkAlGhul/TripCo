@@ -27,6 +27,12 @@ class PlansController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+  end
+
   def destroy
     @plan.destroy if @plan.user_id == current_user.id
     if @plan.destroy

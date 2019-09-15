@@ -1,11 +1,18 @@
 <%= render partial: 'layouts/g-nav' %>
 <div class="contents">
-  <% @contents.each do |content| %>
-    <div class="contents-image">
-      <%= image_tag(content.image.url)%>
-    </div>
-    
-  <% end %>
+  <ul class="contents-header">
+    <% @contents.each do |content| %>
+      <li class="contents-header-image">
+        <%= image_tag(content.image.url)%>
+        <div class="image-text">
+          <h4><%= content.place_name %></h4>
+          <p><span>Access:</span>  <%= content.access%></p>
+          <p><span>Time:</span> <%= content.time%></p>
+        </div>
+      </li>   
+    <% end %>
+  </ul>
+  
   <div class="contents-title center bold">
     <%= @plan.title %>
     <br />

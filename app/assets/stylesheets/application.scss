@@ -1,5 +1,7 @@
 @import "./reset";
 @import 'materialize';
+@import "slick-theme"; 
+@import "slick";
 @import 'font-awesome';
 @import 'global.scss';
 @import 'contents';
@@ -8,4 +10,3 @@
 @import 'create-forms.scss';
 @import 'create-btn';
 @import 'search-result';
-

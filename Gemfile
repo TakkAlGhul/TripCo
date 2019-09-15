@@ -74,4 +74,4 @@ gem 'mini_magick', '4.9.4'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons' 
 gem 'cocoon'
-
+gem 'dropzonejs-rails'
