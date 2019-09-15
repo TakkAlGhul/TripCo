@@ -1,0 +1,24 @@
+<ul class="sidenav" id="mobile-demo">
+  <% if user_signed_in? %>
+    <li>
+      <%= link_to new_user_session_path do%>
+        <i class="material-icons">arrow back</i>
+        Log Out
+      <% end %>
+    </li>
+  <% else %>
+    <li>
+      <%= link_to new_user_registration_path do%>
+        <i class="material-icons">assignment_ind</i>
+        Sign Up
+      <% end %>
+    </li>
+    <li>
+      <%= link_to new_user_session_path do%>
+        <i class="material-icons">input</i>
+        Log In
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+

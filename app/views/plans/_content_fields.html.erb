@@ -6,12 +6,16 @@
   <%= f.text_area :description, placeholder: "description here", id: "description", autofocus: true, required: true %>
   <%# <%= f.label :price, for: "price" %>
   <%# <%= f.number_field :price, placeholder: "price", id: "price", autofocus: true %>
-  <%= f.label :time, for: "time" %>
+  <%= f.label :Time, for: "time" %>
   <%= f.time_field :time, placeholder: "2h ~ 3h", id: "time", autofocus: true %>
+  <br />
   <%= f.label :access, for: "access" %>
   <%= f.text_field :access, placeholder: "access", id: "access", autofocus: true %>
-  <%= f.label :image, for: "image" %>
-  <%= f.file_field :image, id: "image", autofocus: true, required: true %>
+  <%= f.label :image, for: "image" do %>
+    <p>click to pick a image</p>
+    <i class="material-icons">add_a_photo</i>
+    <%= f.file_field :image, id: "image" %>
+  <% end %>
   <div class="link">
     <%= link_to_remove_association("contents remove", f, id: 'remove_content' ) %>
   </div>

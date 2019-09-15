@@ -10,6 +10,8 @@
       <%= f.text_field :destination, placeholder: "ex) Barcelona", id: "destination", autofocus: true, required: true %>
       <%= f.label :title, for: "title" %>
       <%= f.text_field :title, placeholder: "plan title", id: "title", autofocus: true, required: true %>
+      <%# <br />
+      <i class="material-icons">arrow_downward</i> %>
     </div>
 
     <%= f.fields_for :contents, html: {class: "contents-form"} do |c| %>

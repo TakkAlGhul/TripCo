@@ -15,4 +15,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require cocoon
+//= require dropzone
 //= require_tree .
