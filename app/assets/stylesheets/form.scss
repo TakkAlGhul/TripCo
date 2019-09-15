@@ -1,6 +1,21 @@
 .forms {
-  background-color: #badfdb;
+  background: #3594cb;
   height: 100vh;
+
+  h2 {
+    color: #fff;
+    margin-top: 0 !important;
+  }
+
+  &-box {
+    margin: auto;
+    width: 560px;
+    height: 440px;
+    padding: 20px 30px;
+    border: 3px solid #3594cb;
+    border-radius: 30px;
+    background: #fff;
+  }
 }
 
 .field {

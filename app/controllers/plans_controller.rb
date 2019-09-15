@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
 
   def index
-    @user = User.find_by(id: current_user.id)
+    
   end
 
   def plans
@@ -27,6 +27,12 @@ class PlansController < ApplicationController
     end
   end
 
+  def destroy
+    @plan.destroy if @plan.user_id == current_user.id
+    if @plan.destroy
+      redirect_to user_path(current_user.id)
+    end
+  end
   def search
     @plan = Plan.find_by(destination: params[:search])
     @keyword = Plan.search(params[:search]).order('created_at desc')

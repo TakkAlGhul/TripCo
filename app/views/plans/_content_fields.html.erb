@@ -4,10 +4,10 @@
   <%= f.text_field :place_name, placeholder: "ex) museum, restaurant...", id: "place", autofocus: true, required: true %>
   <%= f.label :description, for: "description" %>
   <%= f.text_area :description, placeholder: "description here", id: "description", autofocus: true, required: true %>
-  <%= f.label :price, for: "price" %>
-  <%= f.number_field :price, placeholder: "price", id: "price", autofocus: true %>
+  <%# <%= f.label :price, for: "price" %>
+  <%# <%= f.number_field :price, placeholder: "price", id: "price", autofocus: true %>
   <%= f.label :time, for: "time" %>
-  <%= f.text_field :time, placeholder: "2h ~ 3h", id: "time", autofocus: true %>
+  <%= f.time_field :time, placeholder: "2h ~ 3h", id: "time", autofocus: true %>
   <%= f.label :access, for: "access" %>
   <%= f.text_field :access, placeholder: "access", id: "access", autofocus: true %>
   <%= f.label :image, for: "image" %>
