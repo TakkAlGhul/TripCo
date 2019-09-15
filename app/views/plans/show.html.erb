@@ -1,18 +1,22 @@
 <%= render partial: 'layouts/g-nav' %>
 <div class="contents">
-  <div class="contents-left">
-    <div class="contents-left__title center"><%= @plan.title%></div>
+  <% @contents.each do |content| %>
+    <div class="contents-image">
+      <%= image_tag(content.image.url)%>
+    </div>
+    
+  <% end %>
+  <div class="contents-title center bold">
+    <%= @plan.title %>
     <br />
-    <% @contents.each_with_index do |content, i| %>
-      <div class="contents-left__list center">
-        <span><%= i +1 %>.</span>
-        <%= content.place_name %>
-        <br />
-        <div class="allow-down">
-          <i class="material-icons">arrow_downward</i>
-        </div>
-      </div>
-    <% end %>
+    ●
+    <br />
+    ●
+    <br />
+    ●
   </div>
-  <%= render partial: 'contents-card', collection: @contents, as: "content" %>
+  
+  <ul class="cbp_tmtimeline">
+    <%= render partial: "contents-list", collection: @contents, as: "content" %>
+  </ul>
 </div>

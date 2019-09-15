@@ -19,6 +19,7 @@
   @media screen and (max-width: 768px) {
     .header {
       height: 400px !important;
+      background-size: cover;
       
       &-title {
         display: none;
@@ -28,11 +29,11 @@
   }
     
   .header {
-    background: url("adventure-blur-close-up-346885.jpg") no-repeat;
+    background-image: image-url("adventure-blur-close-up-346885.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
     opacity: 0.8;
-    height: 100vh;
-  
+    height: 100vh;  
   
     &-title {
       font-weight: 550;
@@ -114,6 +115,6 @@
   }
 }
 
-.sidenav-overlay {
-  background-color: initial !important;
+a {
+  cursor: pointer;
 }
