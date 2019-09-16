@@ -1,5 +1,10 @@
 <div class="nested-fields card">
   <h5 class="left blue-text">Plan Detail</h5>
+  <%= f.label :image, for: "image" do %>
+    <p>click to pick a image</p>
+    <i class="material-icons">add_a_photo</i>
+    <%= f.file_field :image, id: "image" %>
+  <% end %>
   <%= f.label :place, for: "place" %>
   <%= f.text_field :place_name, placeholder: "ex) museum, restaurant...", id: "place", autofocus: true, required: true %>
   <%= f.label :description, for: "description" %>
@@ -11,11 +16,7 @@
   <br />
   <%= f.label :access, for: "access" %>
   <%= f.text_field :access, placeholder: "access", id: "access", autofocus: true %>
-  <%= f.label :image, for: "image" do %>
-    <p>click to pick a image</p>
-    <i class="material-icons">add_a_photo</i>
-    <%= f.file_field :image, id: "image" %>
-  <% end %>
+  
   <div class="link">
     <%= link_to_remove_association("contents remove", f, id: 'remove_content' ) %>
   </div>
