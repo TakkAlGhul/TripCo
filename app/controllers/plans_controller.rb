@@ -40,6 +40,7 @@ class PlansController < ApplicationController
     end
   end
   def search
+    @result = params[:search]
     @plan = Plan.find_by(destination: params[:search])
     @keyword = Plan.search(params[:search]).order('created_at desc')
   end

@@ -1,8 +1,11 @@
 <div class="plans">
   <%= render partial: "layouts/g-nav" %>
-  <div class="plans-title">
-    <div class="center plans-result">
-    </div>
+  <div class="plans-result left">
+    <% if @plan.present? %>
+      Results for "<%= @result %>"
+    <% else %>
+      Results not found
+    <% end %>
   </div>
   <div class="main-contents">
     <%= render partial: "list", collection: @keyword, as: "plan" %>

@@ -41,40 +41,6 @@
 
       // font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-  
-    .search_box {
-  
-      @media screen and (max-width: 768px) {
-        nav {
-          margin: auto;
-        }
-      }
-    
-      nav {
-        width: 60% !important;
-        margin: 0 auto;
-        background-color: rgb(236, 236, 236) !important;
-        border-radius: 50px;
-      
-        .material-icons {
-          font-size: 40px;
-          color: rgb(46, 44, 43);
-        }
-    
-        .input-field label.active i {
-          color:  rgb(46, 44, 43) !important;
-        }
-    
-        input[type=search]:not(.browser-default) {
-          border-radius: 40px !important;
-        }
-
-        input[type='submit'] {
-          display: none;
-        }
-        
-      }
-    }
   }  
   .mid-wrapper {
     width: 100%;

@@ -1,6 +1,12 @@
 .global-nav {
   width: 100%;
-  position: fixed;
-  z-index: 10;
-  top: 0;
+  
+  .head {
+    height: 200px;
+  }
+
+  .search_box {
+    padding: 50px 0 0;
+  }
+
 }
