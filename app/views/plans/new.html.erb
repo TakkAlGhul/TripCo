@@ -4,14 +4,12 @@
   <%= form_for @plan, html: {class: "plans-form"} do |f| %>
     <div class="plans-form--box card">
       <h4 class="center blue-text">
-        What's your plan about?
+        プランのタイトル
       </h4>
-      <%= f.label :destination, for: "destination" %>
-      <%= f.text_field :destination, placeholder: "ex) Barcelona", id: "destination", autofocus: true, required: true %>
       <%= f.label :title, for: "title" %>
       <%= f.text_field :title, placeholder: "plan title", id: "title", autofocus: true, required: true %>
-      <%# <br />
-      <i class="material-icons">arrow_downward</i> %>
+      <div class="center">
+      </div>
     </div>
 
     <%= f.fields_for :contents, html: {class: "contents-form"} do |c| %>
@@ -20,6 +18,7 @@
         <div class="link center">
           <%= link_to_add_association(f, :contents, {}) do %>
             <i class="material-icons btn-floating btn-large waves-effect waves-light blue">+</i>
+            次の行程を追加
           <% end %>
         </div>
         <% end %>

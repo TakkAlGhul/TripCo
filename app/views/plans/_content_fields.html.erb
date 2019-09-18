@@ -1,23 +1,29 @@
 <div class="nested-fields card">
-  <h5 class="left blue-text">Plan Detail</h5>
-  <%= f.label :image, for: "image" do %>
-    <p>click to pick a image</p>
-    <i class="material-icons">add_a_photo</i>
-    <%= f.file_field :image, id: "image" %>
-  <% end %>
-  <%= f.label :place, for: "place" %>
-  <%= f.text_field :place_name, placeholder: "ex) museum, restaurant...", id: "place", autofocus: true, required: true %>
-  <%= f.label :description, for: "description" %>
-  <%= f.text_area :description, placeholder: "description here", id: "description", autofocus: true, required: true %>
-  <%# <%= f.label :price, for: "price" %>
-  <%# <%= f.number_field :price, placeholder: "price", id: "price", autofocus: true %>
-  <%= f.label :Time, for: "time" %>
-  <%= f.time_field :time, placeholder: "2h ~ 3h", id: "time", autofocus: true %>
-  <br />
-  <%= f.label :access, for: "access" %>
-  <%= f.text_field :access, placeholder: "access", id: "access", autofocus: true %>
-  
-  <div class="link">
-    <%= link_to_remove_association("contents remove", f, id: 'remove_content' ) %>
+ 
+ 
+  <div class="form-left">
+     <h5 class="left blue-text">プランの詳細<span>(１０個まで)</span></h5>
+    <%= f.label :image, for: "image" do %>
+      <p>画像を選択</p>
+    <%# <i class="material-icons">add_a_photo</i> %>
+      <%= f.file_field :image, id: "image" %>
+    <% end %>
   </div>
+    
+  <div class="form-right">
+    <%= f.label '場所', for: "place" %>
+    <%= f.text_field :place_name, placeholder: "ex) museum, restaurant...", id: "place", autofocus: true, required: true %>
+    <%= f.label 'どんな場所？', for: "description" %>
+    <%= f.text_area :description, placeholder: "description here", id: "description", autofocus: true, required: true %>
+    <%= f.label '滞在時刻', for: "time" %>
+    <%= f.time_field :time, id: "time", autofocus: true %>
+    <br />
+    <div class="link">
+    <%= link_to_remove_association("この行程を削除", f, id: 'remove_content' ) %>
+    </div>
+  </div>
+  
+  
+  
+  
 </div>
