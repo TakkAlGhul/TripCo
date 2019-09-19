@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_06_044008) do
+ActiveRecord::Schema.define(version: 2019_09_19_103447) do
 
   create_table "contents", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "place_name", null: false
@@ -22,11 +22,11 @@ ActiveRecord::Schema.define(version: 2019_09_06_044008) do
     t.string "access"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "rate"
     t.index ["plan_id"], name: "index_contents_on_plan_id"
   end
 
   create_table "plans", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "destination", null: false
     t.string "title"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
@@ -43,6 +43,10 @@ ActiveRecord::Schema.define(version: 2019_09_06_044008) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "uid"
+    t.string "provider"
+    t.string "location"
+    t.string "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
