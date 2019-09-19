@@ -18,7 +18,7 @@
     <br />
     <ul class="mid-wrapper__images">
     <% @plans.each do |plan| %>
-      <%= link_to plan_path(plan.id), class:"card horizontal" do %>
+      <%= link_to plan_path(plan.id) do %>
       <li class="mid-wrapper__images-list card">
         <div class="card-image">
         <%= image_tag(plan.contents.first.image.url)%>
