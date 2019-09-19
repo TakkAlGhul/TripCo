@@ -17,11 +17,11 @@
     <div class="mid-wrapper__title center">Top plans</div>
     <br />
     <ul class="mid-wrapper__images">
-    <% @contents.each do |content| %>
+    <% @plans.each do |plan| %>
       <li class="mid-wrapper__images-list">
-        <%= image_tag(content.image.url)%>
+        <%= image_tag(plan.contents.first.image.url)%>
         <div class="image-text">
-          <h4><%= content.place_name %></h4>
+          <h4><%= plan.contents.first.place_name %></h4>
         </div>
       </li>   
     <% end %>

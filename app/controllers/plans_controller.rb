@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
 
   def index
-    @contents = Content.order('created_at DESC')
+    @plans = Plan.order('created_at desc')
   end
 
   def plans
