@@ -19,14 +19,23 @@
           width: 150px;
           height: 100%;
         }
+
+        .card-stacked {
+          overflow: hidden;
+
+          .card-title {
+            padding: 0 20px 0;
+          }
+    
+          .card-content{
+            padding: 0 20px 0;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+          }
+        }
         
-        &-title {
-          padding: 0 20px 0;
-        }
-  
-        .plan-title {
-          padding: 0 20px 0;
-        }
+        
       }
     }
   }
