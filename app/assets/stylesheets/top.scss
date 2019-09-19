@@ -15,31 +15,16 @@
       }
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .header {
-      height: 400px !important;
-      background-size: cover;
-      
-      &-title {
-        display: none;
-      }
-    }
-    
-  }
     
   .header {
     background-image: image-url("adventure-blur-close-up-346885.jpg");
-    background-size: 100%;
     background-repeat: no-repeat;
     opacity: 0.8;
-    height: 100vh;  
-  
+    height: 600px;
+    width: 100%;
     &-title {
       font-weight: 550;
       font-family: 'Farro', sans-serif;
-
-      // font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   }  
   .mid-wrapper {
