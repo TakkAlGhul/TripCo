@@ -20,8 +20,8 @@
     <% @plans.each do |plan| %>
       <li class="mid-wrapper__images-list">
         <%= image_tag(plan.contents.first.image.url)%>
-        <div class="image-text">
-          <h4><%= plan.contents.first.place_name %></h4>
+        <div class="caption right-align">
+          <h3><%= plan.title %></h3>
         </div>
       </li>   
     <% end %>
