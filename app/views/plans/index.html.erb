@@ -18,10 +18,10 @@
     <br />
     <ul class="mid-wrapper__images">
     <% @plans.each do |plan| %>
-      <li class="mid-wrapper__images-list">
+      <li class="mid-wrapper__images-list card">
+        <div class="card-image">
         <%= image_tag(plan.contents.first.image.url)%>
-        <div class="caption right-align">
-          <h3><%= plan.title %></h3>
+        <span class="card-title"><%= plan.title %></span>
         </div>
       </li>   
     <% end %>

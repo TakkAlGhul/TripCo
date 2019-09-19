@@ -9,14 +9,20 @@
   }
 
   &__images {
-    padding: 30px 10px;
-    margin: 20px 30px;
+    .card {
+      margin: 0 20px;
 
-    &-list {
+      .slick-prev:before {
+        padding: 0 0 0 20px !important;
+      }
+
+      .slick-prev:before {
+        padding: 0 20px 0 0 !important;
+      }
 
       img {
         width: 260px;
-        height: 230px;
+        height: 270px;
         position: relative;
       }
 
