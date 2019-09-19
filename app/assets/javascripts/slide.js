@@ -6,7 +6,14 @@ $(function(){
     fade: true,
     cssEase: 'linear',
     infinite: true,
-  });
+    responsive: [{
+      breakpoint: 768,
+           settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+      }
+    }
+  ]});
 });
 $(function() {
   $('.mid-wrapper__images').slick({
