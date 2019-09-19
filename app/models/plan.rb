@@ -5,6 +5,6 @@ class Plan < ApplicationRecord
 
   def self.search(search)
     return Plan.all unless search
-    Plan.where(['destination LIKE ?', "%#{search}%"])
+    Plan.where(['title LIKE ?', "%#{search}%"])
   end
 end

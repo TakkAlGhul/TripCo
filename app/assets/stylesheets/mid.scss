@@ -1,0 +1,31 @@
+.mid-wrapper {
+  padding: 70px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+  &__title {
+    font-size: 30px;
+    color: #89C1DA;
+  }
+
+  &__images {
+    padding: 30px 10px;
+    margin: 20px 30px;
+
+    .image-text {
+      font-size: 13px;
+      color: #fff;
+    }
+  }
+}
+
+.howto {
+  padding: 70px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  &-title {
+    font-size: 30px;
+    color: #89C1DA;
+  }
+}
+

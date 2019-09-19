@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
 
   def index
-    
+    @contents = Content.order('created_at DESC')
   end
 
   def plans
@@ -48,7 +48,7 @@ class PlansController < ApplicationController
   private
 
   def plan_params
-    params.require(:plan).permit(:destination, :title, contents_attributes: [:id, :place_name, :description, :image, :price, :time, :access, :_destroy]).merge(user_id: current_user.id)
+    params.require(:plan).permit(:title, contents_attributes: [:id, :place_name, :description, :image, :time, :_destroy]).merge(user_id: current_user.id)
   end
 
 end
