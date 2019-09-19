@@ -11,9 +11,10 @@ $(function(){
 $(function() {
   $('.mid-wrapper__images').slick({
         infinite: true,
-        dots:true,
+        dots:false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplaySpeed: 4000,
         responsive: [{
              breakpoint: 768,
                   settings: {
