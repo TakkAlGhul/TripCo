@@ -12,15 +12,24 @@
     padding: 30px 10px;
     margin: 20px 30px;
 
-    img {
-      width: 260px;
-      height: 230px;
+    &-list {
+
+      img {
+        width: 260px;
+        height: 230px;
+        position: relative;
+      }
+
+      .image-text {
+        position: absolute;
+        color: rgba(24, 22, 22, 0.904);
+        bottom: 0;
+        left: 0;
+      }
     }
 
-    .image-text {
-      font-size: 13px;
-      color: #fff;
-    }
+    
+    
   }
 }
 
