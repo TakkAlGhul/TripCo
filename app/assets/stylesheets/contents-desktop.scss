@@ -4,6 +4,7 @@
 
     &-header {
       width: 650px;
+      height: 500px;
   
       .slick-arrow { 
         display: none !important;
@@ -11,7 +12,7 @@
   
       &-image {
         position: fixed;
-        
+
         img {
           margin: 30px 20px 30px 60px;
           height: 500px !important;
@@ -24,8 +25,9 @@
         .image-text {
           position: absolute;
           color: rgba(255, 255, 255, 0.904);
-          bottom: 10px;
-          left: 20px;
+          bottom: 40px;
+          left: 80px;
+
   
           h4 {
             font-size: 36px;
