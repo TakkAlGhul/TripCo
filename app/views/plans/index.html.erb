@@ -1,27 +1,37 @@
 <div class="top-contents">
   
   <div class="header">
-  
-  <%= render partial: "layouts/nav" %>
-    <h3 class="header-title center white-text">Share your travel ideas.</h3>
-    <h3 class="header-title center white-text">Find the best plans for your journey.</h3>
-    <%= render partial: "layouts/search-box" %>
+   
+    <%= image_tag('adventure-blur-close-up-346885.jpg', class: 'desktop-image')%>
+    <%= image_tag('ian-dooley-hpTH5b6mo2s-unsplash.jpg', class: 'sp-image') %>
+    <div class="navhead">
+       <%= render partial: "layouts/nav" %>
+    </div>
+    <div class="header-contents">
+      <h3 class="header-title center white-text">最高の旅行プランを見つけよう</h3>
+      <%= render partial: "layouts/search-box" %>
+    </div>
   </div>
 
   <div class="mid-wrapper">
-    <div class="mid-wrapper__content">
-       <%= image_tag('travel_planning.svg', class: 'mid-wrapper__image') %>
-      <div class="mid-wrapper__content--text">
-        Tell us your favorite places and how you traveled.
-      </div>
-    </div>
-   
-    <div class="mid-wrapper__content">
-      <div class="mid-wrapper__content--text">
-      Share your travel ideas with travelers around the world!
-      </div>
-      <%= image_tag('marginalia-location-access.png', class: 'mid-wrapper__image') %>
-    </div>
+    <div class="mid-wrapper__title center">Top plans</div>
+    <br />
+    <ul class="mid-wrapper__images">
+    <% @plans.each do |plan| %>
+      <%= link_to plan_path(plan.id) do %>
+      <li class="mid-wrapper__images-list card">
+        <div class="card-image">
+        <%= image_tag(plan.contents.first.image.url)%>
+        <span class="card-title"><%= plan.title %></span>
+        </div>
+      </li>   
+     <% end %>
+    <% end %>
+    </ul>
+  </div>
+
+  <div class="howto">
+    <div class="center howto-title">How does this works?</div>
   </div>
 </div> 
 <ul>
@@ -40,3 +50,4 @@
     </ul>
 <%= render partial: 'layouts/create_btn' %>
 <%= render partial: 'layouts/side-nav' %>
+

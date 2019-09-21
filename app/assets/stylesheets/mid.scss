@@ -1,0 +1,44 @@
+.mid-wrapper {
+  padding: 70px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+  &__title {
+    font-size: 30px;
+    color: #89C1DA;
+  }
+
+  &__images {
+    .card {
+      margin: 0 20px;
+
+      img {
+        width: 260px;
+        height: 270px;
+        position: relative;
+        opacity: .7;
+      }
+
+      // .image-text {
+      //   position: absolute;
+      //   color: rgba(255, 251, 251, 0.89);
+      //   bottom: 0;
+      //   left: 0;
+      // }
+    }
+
+    
+    
+  }
+}
+
+.howto {
+  padding: 70px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  &-title {
+    font-size: 30px;
+    color: #89C1DA;
+  }
+}
+
