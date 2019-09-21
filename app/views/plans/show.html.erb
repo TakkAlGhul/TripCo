@@ -11,7 +11,8 @@
     <% end %>
   </ul>
   
-  <div class="contents-title center bold">
+  <div class="contents-right">
+    <div class="contents-title center bold">
     <%= @plan.title %>
     <br />
     ●
@@ -19,9 +20,11 @@
     ●
     <br />
     ●
+    </div>
+  
+    <ul class="cbp_tmtimeline">
+      <%= render partial: "contents-list", collection: @contents, as: "content" %>
+    </ul>
   </div>
   
-  <ul class="cbp_tmtimeline">
-    <%= render partial: "contents-list", collection: @contents, as: "content" %>
-  </ul>
 </div>
