@@ -51,7 +51,7 @@
 
       &-title {
         padding: 30px 10px;
-        font-size: 3rem;
+        font-size: 20px !important;
         color: #3594cb;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
@@ -85,7 +85,8 @@
         width: 25%;
         padding-right: 100px;
         position: absolute;
-        
+        top: -50px;
+        left: 0;
       }
       
       .cbp_tmtimeline > li .cbp_tmtime span {

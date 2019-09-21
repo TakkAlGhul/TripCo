@@ -36,9 +36,10 @@
   }
   
   &-right {
+
     .contents-title {
       padding: 30px 10px;
-      font-size: 3rem;
+      font-size: 42px;
       color: #3594cb;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -70,13 +71,14 @@
     .cbp_tmtimeline > li .cbp_tmtime {
       display: block;
       width: 25%;
-      padding-right: 100px;
       position: absolute;
     }
     
     .cbp_tmtimeline > li .cbp_tmtime span {
       display: block;
-      text-align: right;
+      text-align: left;
+      font-size: 20px;
+      
     }
     
     .cbp_tmtimeline > li .cbp_tmtime span:first-child {
