@@ -12,12 +12,14 @@
         <%= f.password_field :password, autocomplete: "current-password" %>
       </div>
       <div class="center">
-        <div class="actions waves-effect waves-light btn">
+        <div class="right blue actions waves-effect waves-light btn">
           <%= f.submit "Log in" %>
+        </div>
+        <div class="left grey actions waves-effect waves-light btn">
+          <%= link_to "Cancel", root_path, class: "white-text"%>
         </div>
       <% end %>
       <br />
-      OR
       <br />
       <%= render "devise/shared/links" %>
     </div>
