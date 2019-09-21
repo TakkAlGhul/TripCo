@@ -8,6 +8,7 @@ Rails.application.configure do
   config.public_file_server.enabled = true
  
   config.assets.compile = true
+  config.assets.initialize_on_precompile = false
   
   config.active_storage.service = :local
 
