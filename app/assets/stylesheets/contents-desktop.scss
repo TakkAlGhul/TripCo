@@ -5,7 +5,11 @@
     &-header {
       width: 650px;
       height: 500px !important;
-      position: fixed;
+      position: sticky !important;
+      margin-bottom: 0 !important;
+      top: 60px;
+      z-index: 1;
+      
   
       .slick-arrow { 
         display: none !important;
@@ -43,6 +47,7 @@
     
     &-right {
       width: calc(100% - 650px);
+      
 
       &-title {
         padding: 30px 10px;
@@ -52,7 +57,7 @@
       }
     
       .cbp_tmtimeline {
-        margin: 30px 20px 0 30px !important;
+        margin: 30px 40px 0 30px !important;
         padding: 0;
         list-style: none;
         position: relative;
