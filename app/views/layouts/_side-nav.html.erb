@@ -1,8 +1,17 @@
 <ul class="sidenav" id="mobile-demo">
+  
   <% if user_signed_in? %>
+    <h5 class="user_name">こんにちは<%= current_user.nickname %>さん</h5>
+    <br />
+    <li>
+      <%= link_to new_plan_path do %>
+         <i class="material-icons">create</i>
+         Create a Plan
+      <% end %>
+    </li>
     <li>
       <%= link_to destroy_user_session_path, method: :delete do%>
-        <i class="material-icons">arrow back</i>
+        <i class="material-icons">arrow_back</i>
         Log Out
       <% end %>
     </li>

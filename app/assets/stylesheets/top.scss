@@ -54,6 +54,7 @@
 
       .header-contents {
         top: 330px;
+        padding: 0 50px;
 
         .btn {
           top: 60px;
@@ -85,4 +86,8 @@
 
 a {
   cursor: pointer;
+}
+
+.user_name {
+  margin: 25px 0 0 25px;
 }

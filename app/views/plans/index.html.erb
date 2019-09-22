@@ -3,16 +3,19 @@
   <div class="header">
    
     <%= image_tag('adventure-blur-close-up-346885.jpg', class: 'desktop-image')%>
-    <%= image_tag('ian-dooley-hpTH5b6mo2s-unsplash.jpg', class: 'sp-image') %>
+    <%= image_tag('ian-dooley-hpTH5b6mo2s-unsplash-min (1).jpg', class: 'sp-image') %>
     <div class="navhead">
        <%= render partial: "layouts/nav" %>
     </div>
     <div class="header-contents">
       <h3 class="header-title center white-text">最高の旅行プランを見つけよう</h3>
       <%= render partial: "layouts/search-box" %>
+
+      <% unless user_signed_in? %>
       <%= link_to user_twitter_omniauth_authorize_path, class:'blue waves-effect waves-light btn' do %>
         <i class="fa fa-twitter"></i>
         Twitterではじめる
+      <% end %>
       <% end %>
     </div>
    
