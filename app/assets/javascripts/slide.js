@@ -9,8 +9,9 @@ $(function(){
     responsive: [{
       breakpoint: 768,
            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+               fade: false,
+               slidesToShow: 1,
+               slidesToScroll: 1,
       }
     }
   ]});
