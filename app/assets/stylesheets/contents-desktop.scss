@@ -19,6 +19,7 @@
       }
   
       &-image {
+        border: black solid 1px;
       
         img {
           margin: 30px 20px 30px 60px;
@@ -27,11 +28,13 @@
           object-fit: cover;
           position: relative;
           opacity: .9;
+          border: 5px solid #fff;
+          box-shadow: rgb(0, 0, 0);
         }
   
         .image-text {
           position: absolute;
-          color: rgba(255, 255, 255, 0.904);
+          color: rgb(255, 255, 255);
           bottom: 40px !important;
           left: 80px !important;
 
