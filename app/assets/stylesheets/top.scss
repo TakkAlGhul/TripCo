@@ -37,7 +37,7 @@
       display: none;
       position: relative;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .desktop-image{
         display: none !important;
       } 
@@ -54,6 +54,11 @@
 
       .header-contents {
         top: 330px;
+
+        .btn {
+          top: 60px;
+          left: 30%;
+        }
       }
     }
    
@@ -68,8 +73,8 @@
       font-family: 'Farro', sans-serif;
 
       .btn {
-        top: 100px;
-        left: 30%;
+        top: 160px;
+        left: 40%;
         margin: auto;
         text-transform: none !important;
         border-radius: 10px;

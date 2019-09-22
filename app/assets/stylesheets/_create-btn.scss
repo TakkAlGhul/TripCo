@@ -1,18 +1,18 @@
 .create-btn {
   position: fixed;
   z-index: 10;
-  bottom: 32px;
-  right: 32px;
-  width: 100px;
-  height: 100px;
+  bottom: 22px;
+  right: 12px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background: #64b2cd;
+  background: #f8a978;
   color: #fff;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
 
   .material-icons {
-    font-size: 48px !important;
+    font-size: 30px !important;
   }
 }
 
