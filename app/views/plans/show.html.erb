@@ -10,7 +10,7 @@
       </li>   
     <% end %>
   </ul>
-  
+
   <div class="contents-right">
     <div class="contents-title center bold">
     <%= @plan.title %>  
@@ -20,5 +20,12 @@
       <%= render partial: "contents-list", collection: @contents, as: "content" %>
     </ul>
   </div>
-  
+
+  <div class="sns-btns center">
+    <h5 class="center">SNSでシェア</h5>
+    <br />
+    <%= link_to 'Twitter', "https://twitter.com/share?url=#{request.url}&text=#{@plan.title}", class: 'twitter', title: 'Twitter', target: '_blank' %>
+    <%= link_to 'Facebook', "https://www.facebook.com/sharer/sharer.php?u=#{request.url}&text=#{@plan.title}", class: 'facebook', title: 'Facebook', target: '_blank' %>
+    <%= link_to 'LINE', "http://line.me/R/msg/text/?#{request.url}&text=#{@plan.title}", class: 'line', title: 'LINE', target: '_blank' %>
+  </div>
 </div>
