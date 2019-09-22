@@ -7,8 +7,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   # def facebook
   #   callback_from :facebook
   # end 
-
-  private
  
   def callback_from(provider)
     provider = provider.to_s
