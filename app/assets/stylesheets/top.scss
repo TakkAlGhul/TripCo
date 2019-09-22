@@ -66,6 +66,14 @@
       margin: auto;
       font-weight: 550;
       font-family: 'Farro', sans-serif;
+
+      .btn {
+        top: 100px;
+        left: 30%;
+        margin: auto;
+        text-transform: none !important;
+        border-radius: 10px;
+      }
     }
   }  
 }  

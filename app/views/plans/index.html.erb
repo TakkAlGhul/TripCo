@@ -9,10 +9,14 @@
     </div>
     <div class="header-contents">
       <h3 class="header-title center white-text">最高の旅行プランを見つけよう</h3>
-      <%= link_to 'Twitterログイン', user_twitter_omniauth_authorize_path  %>
       <%= render partial: "layouts/search-box" %>
+      <%= link_to user_twitter_omniauth_authorize_path, class:'blue waves-effect waves-light btn' do %>
+        <i class="fa fa-twitter"></i>
+        Twitterではじめる
+      <% end %>
     </div>
-  </div>
+   
+  </div> 
 
   <div class="mid-wrapper">
     <div class="mid-wrapper__title center">Top plans</div>
