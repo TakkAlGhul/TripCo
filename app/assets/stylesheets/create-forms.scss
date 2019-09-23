@@ -88,20 +88,22 @@
   
   @media screen and (max-width: 768px) {
     .plans-form {
+      margin: 20px 20px;
+
       .card {
         margin: 60px auto !important;
       }
         
       &--box {
         margin: 20px 70px 25px;
-        padding: 15px 25px;
+        padding: 15px 15px;
         width: 100%;
         height: 200px;
       }
   
       .nested-fields {
         margin: 20px 80px 25px;
-        padding: 35px 25px;
+        padding: 35px 15px;
         width: 100%;
         display: block;
         
