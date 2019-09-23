@@ -29,17 +29,17 @@ http://trippot.herokuapp.com/
 
 ## Tools
 ### 言語
-Ruby on Rails
-JQuery
-Sass
+Ruby on Rails  
+JQuery  
+Sass  
 
 ### インフラ
-Heroku
+Heroku  
 Aws S3
 
 ### デザイン・設計
-Figma
-Photoshop
+Figma  
+Photoshop  
 Pexels(Free images)
 
 
