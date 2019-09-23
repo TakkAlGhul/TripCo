@@ -18,9 +18,9 @@
     
   <div class="form-right">
     <%= f.label '場所', for: "place" %>
-    <%= f.text_field :place_name, placeholder: "ex) museum, restaurant...", id: "place", autofocus: true, required: true %>
+    <%= f.text_field :place_name, placeholder: "例) レストラン、博物館", id: "place", autofocus: true, required: true %>
     <%= f.label 'どんな場所？', for: "description" %>
-    <%= f.text_area :description, placeholder: "description here", id: "description", autofocus: true, required: true %>
+    <%= f.text_area :description, placeholder: "場所の説明や感想", id: "description", autofocus: true, required: true %>
     <%= f.label '滞在時刻', for: "time" %>
     <%= f.select :time, options_for_select(get_times), {prompt: 'クリックで時刻を選択'}, {class: 'browser-default', id: 'time-select'}%>
     <br />
