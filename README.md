@@ -5,8 +5,8 @@
 http://trippot.herokuapp.com/
 
 #### テスト用アカウント
-nickname: nick
-email: n@com
-pass: aaaaaa
+・nickname: nick　\n
+・email: n@com
+・pass: aaaaaa
 
 
