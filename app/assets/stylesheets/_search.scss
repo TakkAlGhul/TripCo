@@ -7,7 +7,7 @@
   }
 
   nav {
-    width: 60% !important;
+    width: 80% !important;
     margin: 0 auto;
     background-color: rgb(236, 236, 236) !important;
     border-radius: 50px;
@@ -24,6 +24,7 @@
     input[type=search]:not(.browser-default) {
       border-radius: 40px !important;
       margin: 0;
+      background-color: #fff !important; 
     }
 
     input[type='submit'] {
