@@ -2,7 +2,13 @@
 
   @media screen and (max-width: 768px) {
     nav {
-      margin: auto;
+      margin: auto!important;
+      
+      
+      input[type=search] {
+        width: 100% !important;
+        box-sizing: border-box;
+      }
     }
   }
 

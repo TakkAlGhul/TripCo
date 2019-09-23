@@ -156,7 +156,7 @@
         font-weight: 300;
         line-height: 1.4;
         position: relative;
-        border-radius: 5px;
+        border-radius: 5px;      
       }
       
       .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
@@ -254,6 +254,7 @@
           padding: 1em;
           font-weight: 400;
           font-size: 95%;
+          word-wrap: break-word;
         }
       
         .cbp_tmtimeline > li .cbp_tmlabel:after {
@@ -262,6 +263,7 @@
           border-right-color: transparent;
           border-bottom-color: #3594cb;
           top: -20px;
+          word-wrap: break-word;
         }
       
         .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
