@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_19_103447) do
+ActiveRecord::Schema.define(version: 2019_09_23_121123) do
 
   create_table "contents", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "place_name", null: false
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_09_19_103447) do
     t.string "image"
     t.bigint "plan_id", null: false
     t.integer "price"
-    t.string "time"
+    t.time "time"
     t.string "access"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

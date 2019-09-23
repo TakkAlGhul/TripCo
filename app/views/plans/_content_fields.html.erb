@@ -2,21 +2,18 @@
   <div class="form-left">
     <h5 class="left blue-text">プランの詳細</h5>
     <br />
-    <br />
-    <%= f.label :image, for: "image" do %>
-      <p>クリックで画像アップロード</p> 
-      <i class="material-icons">add_a_photo</i>
-      <%= f.file_field :image, id: "image"%>
-    <% end %>
-    <%# <div class="file-field input-field">
+    <br /> 
+    <div class="file-field input-field">
       <div class="btn blue">
-        <span>image</span>
-        <%= f.file_field :image, id: "image" %> 
-      <%# </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="">
+        <span>File</span>
+        <%= f.file_field :image%>
       </div>
-    </div> 
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+      </div>
+    </div>
+    
+    
   </div>
     
   <div class="form-right">

@@ -33,6 +33,13 @@
       .form-left {
         width: 300px;
         margin-right: 40px;
+        
+        input[type=file] {
+          content: "";
+          border: 2px solid #3594cb !important;
+          border-radius: 5px;
+        }
+      
       }
 
      
