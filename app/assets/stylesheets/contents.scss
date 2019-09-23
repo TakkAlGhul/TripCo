@@ -1,5 +1,6 @@
 .contents {
   padding: 55px 0;
+  word-wrap: break-word;
 
   &-header {
     height: 295px;
@@ -88,7 +89,7 @@
       display: block;
       text-align: left;
       font-size: 20px;
-      
+      word-wrap: normal !important;
     }
     
     .cbp_tmtimeline > li .cbp_tmtime span:first-child {

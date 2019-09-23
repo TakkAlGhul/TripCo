@@ -1,11 +1,11 @@
 <div class="nested-fields card">
- 
- 
   <div class="form-left">
-     <h5 class="left blue-text">プランの詳細<span>(１０個まで)</span></h5>
+    <h5 class="left blue-text">プランの詳細</h5>
+    <br />
+    <br />
     <%= f.label :image, for: "image" do %>
-      <p>画像を選択</p>
-    <%# <i class="material-icons">add_a_photo</i> %>
+      <p>クリックで画像アップロード</p>
+      <i class="material-icons">add_a_photo</i>
       <%= f.file_field :image, id: "image" %>
     <% end %>
   </div>
@@ -16,7 +16,7 @@
     <%= f.label 'どんな場所？', for: "description" %>
     <%= f.text_area :description, placeholder: "description here", id: "description", autofocus: true, required: true %>
     <%= f.label '滞在時刻', for: "time" %>
-    <%= f.time_field :time, id: "time", autofocus: true %>
+    <%= f.select :time, options_for_select(get_times), {prompt: 'クリックで時刻を選択'}, {class: 'browser-default', id: 'time-select'}%>
     <br />
     <div class="link">
     <%= link_to_remove_association("この行程を削除", f, id: 'remove_content' ) %>

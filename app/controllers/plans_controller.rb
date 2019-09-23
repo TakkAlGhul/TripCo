@@ -17,6 +17,7 @@ class PlansController < ApplicationController
   def new
     @plan = Plan.new
     @plan.contents.build
+    binding.pry
   end
 
   def create
@@ -41,7 +42,7 @@ class PlansController < ApplicationController
       end
     end
   end
-  
+
   def search
     @result = params[:search]
     @plan = Plan.find_by(title: params[:search])

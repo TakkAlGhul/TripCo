@@ -2,12 +2,11 @@
 
   @media screen and (max-width: 768px) {
     nav {
-      margin: auto!important;
+      margin: auto !important;
       
       
       input[type=search] {
-        width: 100% !important;
-        box-sizing: border-box;
+        width: 120% !important;
       }
     }
   }
@@ -29,16 +28,12 @@
 
     input[type=search]:not(.browser-default) {
       border-radius: 40px !important;
+      margin: 0;
     }
 
     input[type='submit'] {
       display: none;
-    }
-
-    input[type=search]:not(.browser-default) {
-      background-color: #fff !important;
-    }
-    
+    }   
   }
 }
 

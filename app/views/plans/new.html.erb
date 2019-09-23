@@ -6,7 +6,7 @@
       <h4 class="center blue-text">
         プランのタイトル
       </h4>
-      <%= f.label :title, for: "title" %>
+      <%= f.label "タイトル", for: "title" %>
       <%= f.text_field :title, placeholder: "plan title", id: "title", autofocus: true, required: true %>
       <div class="center">
       </div>
@@ -17,14 +17,14 @@
         <%= render 'content_fields', f: c %>
         <div class="link center">
           <%= link_to_add_association(f, :contents, {}) do %>
-            <i class="material-icons btn-floating btn-large waves-effect waves-light blue">+</i>
-            次の行程を追加
+            <i class="material-icons btn-floating btn-large waves-effect waves-light orange">+</i>
+            <p class="white-text bold">次の行程を追加</p>
           <% end %>
         </div>
         <% end %>
         
         <div class="button center">
-          <%= f.submit 'POST', class: 'btn waves-effect waves-light' %>
+          <%= f.submit '投稿', class: 'btn waves-effect waves-light blue lighten-3' %>
         </div> 
       </div>
   <% end %>
