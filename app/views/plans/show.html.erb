@@ -14,6 +14,12 @@
   <div class="contents-right">
     <div class="contents-title center bold">
     <%= @plan.title %>  
+    <% if user_signed_in? && @plan.user_id == current_user.id %>
+      <%= link_to plan_path(@plan.id), method: :delete, data:{ confirm: '削除すると二度と復活できません。本当に削除しますか？' }, class: 'delete-icon' do %>
+        <%= fa_icon 'trash'%>
+        <p>削除</p>
+      <% end %>
+    <% end %>
     </div>
   
     <ul class="cbp_tmtimeline">

@@ -42,6 +42,16 @@
       font-size: 42px;
       color: #3594cb;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      .delete-icon {
+        margin-left: 100px;
+        font-size: 20px;
+        color: rgb(105, 103, 103);
+
+        p {
+          display: none;
+        }
+      }
     }
   
     .cbp_tmtimeline {
@@ -237,7 +247,7 @@
       background-color: #2e4a88;
       box-shadow: 0 4px 0 #1B3D82;
       text-shadow: 0 -1px -1px #1B3D82;
-  
+      margin: 0 15px;
       display: inline;
       position: relative;
       font-family: Arial;

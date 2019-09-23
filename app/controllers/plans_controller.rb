@@ -1,5 +1,7 @@
 class PlansController < ApplicationController
 
+  before_action :set_plan, only: [:show, :edit, :update, :destroy]
+
   def index
     @plans = Plan.order('created_at desc')
   end
@@ -9,7 +11,6 @@ class PlansController < ApplicationController
   end
   
   def show
-    @plan = Plan.find(params[:id])
     @contents = @plan.contents.where(plan_id: params[:id])
   end
 
@@ -34,11 +35,13 @@ class PlansController < ApplicationController
   end
 
   def destroy
-    @plan.destroy if @plan.user_id == current_user.id
-    if @plan.destroy
-      redirect_to user_path(current_user.id)
+    if @plan.user_id == current_user.id   
+      if @plan.destroy
+        redirect_to root_path(current_user.id)
+      end
     end
   end
+  
   def search
     @result = params[:search]
     @plan = Plan.find_by(title: params[:search])
@@ -49,6 +52,10 @@ class PlansController < ApplicationController
 
   def plan_params
     params.require(:plan).permit(:title, contents_attributes: [:id, :place_name, :description, :image, :time, :_destroy]).merge(user_id: current_user.id)
+  end
+
+  def set_plan
+    @plan = Plan.find(params[:id])
   end
 
 end
