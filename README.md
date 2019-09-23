@@ -20,6 +20,6 @@ http://trippot.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/6a4a6e162911f53cabec343734adf362.png)](https://gyazo.com/6a4a6e162911f53cabec343734adf362)
 
 ####  SNSで投稿のシェアが可能です。投稿の削除は右上のゴミ箱のボタンで可能です。
-/var/folders/57/lf6c2v0d5kl9l0dgh_1pk9n00000gn/T/com.apple.Preview/com.apple.Preview.PasteboardItems/0734ba4a397096e624962dccfbb36dd7-1（ドラッグされました）.tiff
+[![Image from Gyazo](https://i.gyazo.com/0734ba4a397096e624962dccfbb36dd7.gif)](https://gyazo.com/0734ba4a397096e624962dccfbb36dd7)
 
 
