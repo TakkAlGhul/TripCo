@@ -35,4 +35,7 @@
     <%= link_to 'LINE', "http://line.me/R/msg/text/?#{request.url}&text=#{@plan.title}", class: 'line', title: 'LINE', target: '_blank' %>
   </div>
 </div>
-<%= render partial: 'layouts/create_btn' %>
+
+<% if user_signed_in? %>
+  <%= render partial: 'layouts/create_btn' %>
+<% end %>
