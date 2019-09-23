@@ -3,9 +3,9 @@
 <div class="create-form">
   <%= form_for @plan, html: {class: "plans-form"} do |f| %>
     <div class="plans-form--box card">
-      <h4 class="center blue-text">
+      <h5 class="center blue-text">
         プランのタイトル
-      </h4>
+      </h5>
       <%= f.label "タイトル", for: "title" %>
       <%= f.text_field :title, placeholder: "plan title", id: "title", autofocus: true, required: true %>
       <div class="center">
