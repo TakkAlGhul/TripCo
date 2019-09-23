@@ -1,6 +1,6 @@
 # Trippot
 
-##　Trippotは旅人たち、これから旅行したい人向けの旅行プラン共有サービスです。
+## Trippotは旅人たち、これから旅行したい人向けの旅行プラン共有サービスです。
 
 http://trippot.herokuapp.com/
 
@@ -8,7 +8,7 @@ http://trippot.herokuapp.com/
 ・nickname: nick　・email: n@com　・pass: aaaaaa　
 そのほかTwitterでもログイン可能
 
-##　Overview
+## Overview
 
 #### 右上の「create」からプランの作成フォームに入ります。　検索はタイトルから検索できます。
 [![Image from Gyazo](https://i.gyazo.com/575c4d049bff28f963d90f0316f58833.jpg)](https://gyazo.com/575c4d049bff28f963d90f0316f58833)
@@ -23,12 +23,12 @@ http://trippot.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/f0504c55791842a2eec818cbe8234d38.jpg)](https://gyazo.com/f0504c55791842a2eec818cbe8234d38)
 
 
-##　background
+## background
 これを製作した背景は、自分自身これまでに３０カ国以上旅してきましたが、旅程を計画することをかなり面倒だと感じてしまっている。
 そのため、他の旅人のプランを参考にできるようなサービスを作れないだろうかと考えたことで、Trippotを作成するに至った。
 
-##　Tools
-###　言語
+## Tools
+### 言語
 Ruby on Rails
 JQuery
 Sass
