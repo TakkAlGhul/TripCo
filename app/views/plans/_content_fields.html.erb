@@ -4,10 +4,19 @@
     <br />
     <br />
     <%= f.label :image, for: "image" do %>
-      <p>クリックで画像アップロード</p>
+      <p>クリックで画像アップロード</p> 
       <i class="material-icons">add_a_photo</i>
-      <%= f.file_field :image, id: "image" %>
+      <%= f.file_field :image, id: "image"%>
     <% end %>
+    <%# <div class="file-field input-field">
+      <div class="btn blue">
+        <span>image</span>
+        <%= f.file_field :image, id: "image" %> 
+      <%# </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="">
+      </div>
+    </div> 
   </div>
     
   <div class="form-right">
