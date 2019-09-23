@@ -30,9 +30,10 @@
 }
 
 .howto {
-  padding: 70px 30px;
+  padding: 70px 75px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #89C1DA;
+ 
   &-title {
     font-size: 30px;
   }
@@ -40,7 +41,21 @@
   &-texts {
     display: flex;
     justify-content: space-between;
-    padding: 40px 50px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-post {
+      padding: 40px 0;
+      margin: auto 0;
+
+      img {
+        width: 200px;
+        height: 400px;
+      }
+      
+      
+    }
+
   }
 }
 
