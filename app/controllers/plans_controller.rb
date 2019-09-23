@@ -17,7 +17,6 @@ class PlansController < ApplicationController
   def new
     @plan = Plan.new
     @plan.contents.build
-    binding.pry
   end
 
   def create
