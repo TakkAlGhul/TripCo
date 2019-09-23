@@ -22,6 +22,7 @@ $(function() {
         dots:false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplay: true,
         autoplaySpeed: 4000,
         responsive: [{
              breakpoint: 768,
