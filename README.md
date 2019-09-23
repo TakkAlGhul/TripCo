@@ -9,6 +9,7 @@ http://trippot.herokuapp.com/
 そのほかTwitterでもログイン可能
 
 ##　Overview
+
 [![Image from Gyazo](https://i.gyazo.com/7c815706b28e2a6cf3f4aeeeba4bba10.gif)](https://gyazo.com/7c815706b28e2a6cf3f4aeeeba4bba10)
 
 
