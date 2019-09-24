@@ -4,9 +4,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     callback_from :twitter
   end
  
-  # def facebook
-  #   callback_from :facebook
-  # end 
+  def facebook
+    callback_from :facebook
+  end 
  
   def callback_from(provider)
     provider = provider.to_s
