@@ -9,11 +9,18 @@
 
   &-texts {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 
+    @media screen and (max-width: 767px) {
+      .howto-texts-post {
+        padding: 0 !important;
+      }
+    }
+
     &-post {
+      padding: 40px;
       margin: auto;
 
       &_text {
@@ -21,8 +28,8 @@
         font-size: 20px;
       }
 
-
       img {
+        margin-left: 25px;
         width: 200px;
         height: 400px;
       }
