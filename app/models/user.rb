@@ -7,6 +7,9 @@ class User < ApplicationRecord
   has_many :products
   has_many :contents
 
+  validates :nickname, :password, presence: true
+  validates :email, uniqueness: true
+
   protected
   
   def self.find_for_oauth(auth)
