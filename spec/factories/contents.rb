@@ -5,6 +5,6 @@ FactoryBot.define do
     description        { Faker::Lorem.sentence }
     plan_id            { Plan.new(id: 1) }
     image              {File.open("#{Rails.root}/public/images/test_image.jpg")}
-    time               { 10 }
+    time               { "10:00" }
   end
 end

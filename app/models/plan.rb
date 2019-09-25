@@ -3,8 +3,7 @@ class Plan < ApplicationRecord
   has_many :contents, inverse_of: :plan, dependent: :destroy
   accepts_nested_attributes_for :contents, allow_destroy: true
 
-  validates :nickname, :encrypted_password, presence: true
-  validates :email, uniqueness: true
+  validates :title, :user_id, presence: true
 
   def self.search(search)
     return Plan.all unless search
