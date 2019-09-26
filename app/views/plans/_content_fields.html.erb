@@ -9,7 +9,7 @@
         <%= f.file_field :image%>
       </div>
       <div class="file-path-wrapper">
-        <input class="file-path validate" type="text" placeholder="画像をアップロード">
+        <input class="file-path validate" type="text" placeholder="画像をアップロード" required>
       </div>
     </div>
     
@@ -22,7 +22,7 @@
     <%= f.label 'どんな場所？', for: "description" %>
     <%= f.text_area :description, placeholder: "場所の説明や感想", id: "description", autofocus: true, required: true %>
     <%= f.label '滞在時刻', for: "time" %>
-    <%= f.select :time, options_for_select(get_times), {prompt: 'クリックで時刻を選択'}, {class: 'browser-default', id: 'time-select'}%>
+    <%= f.select :time, options_for_select(get_times), {prompt: 'クリックで時刻を選択'}, {class: 'browser-default', id: 'time-select', autofocus: true, required: true}%>
     <br />
     <div class="link">
     <%= link_to_remove_association("この行程を削除", f, id: 'remove_content' ) %>
