@@ -7,8 +7,8 @@ class User < ApplicationRecord
   has_many :products
   has_many :contents
 
-  validates :password, presence: true
-  validates :email, uniqueness: true
+  validates :nickname, :password, presence: true
+  validates :email, {presence: true, uniqueness: true}
 
   protected
   
