@@ -9,14 +9,7 @@
   }
 
   &__images {
-    a {
-      transition: all .5s;
-    }
-
-    a:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-    }
+  
     .card {
       margin: 0 20px;
 
@@ -25,6 +18,12 @@
         height: 270px;
         position: relative;
         opacity: .7;
+        transition: all .5s;
+      }
+
+      img {
+        transform: translateY(-10px);
+        box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
       }
 
       .image-text {
