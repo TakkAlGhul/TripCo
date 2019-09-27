@@ -10,15 +10,15 @@
       <%= render partial: "layouts/search-box" %>
 
       <% unless user_signed_in? %>
-      <%= link_to user_twitter_omniauth_authorize_path, class:'blue waves-effect waves-light btn' do %>
-        <i class="fa fa-twitter"></i>
-        Twitterではじめる
-      <% end %>
-      <br />
-      <%# <%= link_to user_facebook_omniauth_authorize_path, class:'blue darken-4 waves-effect waves-light btn' do %>
-        <%# <i class="fa fa-facebook"></i>
-        Facebookではじめる
-      <% end %> 
+        <%= link_to user_twitter_omniauth_authorize_path, class:'blue waves-effect waves-light btn' do %>
+          <i class="fa fa-twitter"></i>
+          Twitterではじめる
+        <% end %>
+        <br />
+        <%= link_to user_facebook_omniauth_authorize_path, class:'blue darken-4 waves-effect waves-light btn' do %>
+          <i class="fa fa-facebook"></i>
+          Facebookではじめる
+        <% end %> 
       <% end %>
     </div>
   </div> 
