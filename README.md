@@ -2,7 +2,7 @@
 
 ## Trippotは旅人たち、これから旅行したい人向けの旅行プラン共有サービスです。
 
-http://trippot.herokuapp.com/
+https://trippot.fun
 
 #### テスト用アカウント
 ・nickname: nick  　
