@@ -5,9 +5,9 @@
 https://trippot.fun
 
 #### テスト用アカウント
-・nickname: nick    　
-・email: n@com    　
-・pass: aaaaaa    　
+・nickname: nick      　
+・email: n@com  　
+・pass: aaaaaa      　
 そのほかTwitter, Facebookでもログイン可能
 
 ## Overview
