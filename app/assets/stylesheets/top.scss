@@ -54,8 +54,13 @@
       }
 
       .header-contents {
-        top: 330px;
+        top: 230px;
         padding: 0 50px;
+
+        .header-title {
+          font-size: 22px;
+          font-weight: 600;
+        }
 
         .btn {
           top: 60px;
@@ -75,11 +80,16 @@
       font-family: 'Farro', sans-serif;
 
       .btn {
+        width: 200px;
         top: 190px;
         left: 42%;
-        margin: auto;
+        margin: 10px auto;
         text-transform: none !important;
         border-radius: 10px;
+
+        .fa {
+          margin-right: 10px;
+        }
       }
     }
   }  
