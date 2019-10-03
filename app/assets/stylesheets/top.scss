@@ -54,6 +54,7 @@
       }
 
       .header-contents {
+        width: 100%;
         top: 200px;
         padding: 0 50px;
 
@@ -64,7 +65,9 @@
 
         .btn {
           top: 60px;
-          left: 15%;
+          left: 0;
+          right: 0;
+
         }
       }
     }
@@ -78,11 +81,11 @@
       margin: auto;
       font-weight: 550;
       font-family: 'Farro', sans-serif;
+      text-align: center;
 
       .btn {
         width: 200px;
         top: 190px;
-        left: 42%;
         margin: 10px auto;
         text-transform: none !important;
         border-radius: 10px;
