@@ -1,7 +1,7 @@
 <div class="main-contents-list">
   <%= link_to plan_path(plan.id), class:"card horizontal" do %>
     <div class="card-image">
-      <%= image_tag(plan.contents.first.image.url) %>
+      <%= lazy_image_tag(plan.contents.first.image.url) %>
     </div>
     <div class="card-stacked">
       <div class="card-title">

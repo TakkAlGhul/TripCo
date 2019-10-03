@@ -3,7 +3,7 @@
   <ul class="contents-header">
     <% @contents.each do |content| %>
       <li class="contents-header-image">
-        <%= image_tag(content.image.url)%>
+        <%= lazy_image_tag(content.image.url)%>
         <div class="image-text">
           <h4><%= content.place_name %></h4>
         </div>
