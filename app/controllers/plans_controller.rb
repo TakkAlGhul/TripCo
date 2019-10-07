@@ -5,10 +5,6 @@ class PlansController < ApplicationController
   def index
     @plans = Plan.order('created_at desc')
   end
-
-  def plans
-    @plans = Plan.all
-  end
   
   def show
     @contents = @plan.contents.where(plan_id: params[:id])
