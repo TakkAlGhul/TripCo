@@ -3,7 +3,7 @@ class PlansController < ApplicationController
   before_action :set_plan, only: [:show, :edit, :update, :destroy]
 
   def index
-    @plans = Plan.order('created_at desc')
+    @plans = Plan.includes(:user).order('created_at desc')
   end
   
   def show
